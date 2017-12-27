@@ -1,0 +1,73 @@
+.wheel-container{
+    text-align: center;
+    margin: 10px;
+
+    #wheel{
+  display:inline-block;
+  position:relative;
+  overflow:hidden;
+  
+ canvas{
+    border: 1rem solid black;
+    border-radius: 50%;
+ }
+}
+
+  #wheel:after{
+    box-sizing: unset;
+  content:"";
+  background:red;
+  border:2px solid white;
+  position:absolute;
+  top:-7px;
+  left:50%;
+  width:10px;
+  height:10px;
+  margin-left:-7px;
+  transform: rotate(45deg)
+}
+}
+.food-list{
+    border: 2px solid gray;
+    padding: 2rem;
+    .row{
+        padding: 1rem;
+    }
+}
+.remove-item{
+ text-align: right   
+}
+.edit-list-btn{
+    width: 100%;
+    background-color:transparent;
+    text-align: center;
+    border: 1px solid gray;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+.animation {
+  position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 40;
+}
+
+
+/* Standard syntax */
+@keyframes example {
+   33%   {color:rgba(255, 0, 0, 0.151); left:0px; top:0px;}
+    33%  {color:rgba(255, 255, 0, 0.322); left:0; top:0px;}
+    33%  {color:rgba(0, 0, 255, 0.274); left:0px; top:0px;}
+   
+}
+
+
+
